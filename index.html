@@ -1,11 +1,582 @@
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Pritesh Bhavsar</title>
-</head>
-<body>
-    <h1>This is just a test webpage</h1>
 
+
+<head>
+
+<title>Pritesh Bhavsar</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="keywords" content="pritesh bhavsar, xamut technologies, artificial intelligence, deep learning, neural networls, computer science, bridgeport, unievrsity of bridgeport">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link rel="icon" type="image/png" href="images/fov.png">
+<link rel="stylesheet" href="css/bootstrap.min.css"		type="text/css" media="all">
+<link rel="stylesheet" href="css/style.css" 			type="text/css" media="all">
+<link rel="stylesheet" href="css/font-awesome.min.css"	type="text/css" media="all">
+<link rel="stylesheet" href="css/chocolat.css"			type="text/css" media="all">
+<link rel="stylesheet" href="css/owl.carousel.css"		type="text/css" media="all">
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700" 				type="text/css" media="all">
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900"	type="text/css" media="all">
+
+<script type="text/javascript">
+  if (screen.width <= 800) {
+    window.location = "http://m.priteshbhavsar.com";
+  }
+</script>
+
+<script>
+function _(id) {return document.getElementById(id);}
+function submitForm(){
+	_("mybtn").disable = true;
+	_("status").innerHTML = 'Please Wait...';
+	var formdata = new FormData();
+	formdata.append("n", _(n).value);
+	formdata.append("e", _(e).value);
+	formdata.append("ph", _(ph).value);
+	formdata.append("m", _(m).value);
+	
+	var ajax = new XMLHttpRequest();
+	ajax.open("POST", "parser.php");
+	ajax.onreadystatechange = function() {
+		if(ajax.readyState == 4 && ajax.status == 200) {
+			_("my_form").innerHTML = '<h2>Thanks ';			
+		} else {
+			_("status").innerHTML = ajax.responseText;
+			_("mybtn").disable = flase;
+		}
+	}
+	ajax.send(formdata);
+}
+</script>
+
+<script type="text/javascript">
+var text = ["-DEVELOPER-","-DESIGNER-","-ENTREPRENEUR-"];
+    var counter = 0;
+setInterval ( "spinner()", 1500 );
+function spinner ( )
+{
+    document.getElementById("spinner").innerHTML = text[counter];
+        counter++;
+        if(counter >= text.length) { counter = 0; }
+}
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-100007150-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+</head>
+
+<body>
+	<div class="header" id="agilehome">
+		<canvas></canvas>
+		<h1>PRITESH BHAVSAR</h1>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<h2><span><div id="spinner" style=" color: black;"></div></span></h2>
+
+		<div class="navigation">
+
+			<div class="nav-grids">
+				<div class="ch-grid">
+					<div class="col-md-2 nav-grid nav-grid1">
+						<div class="ch-item ch-img-1">
+							<div class="ch-info-wrap">
+								<div class="ch-info">
+									<div class="ch-info-front ch-img-1"><i class="fa fa-male" aria-hidden="true"></i></div>
+									<div class="ch-info-back">
+										<h3><a class="scroll" href="#agileabout">ABOUT</a></h3>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-2 nav-grid nav-grid2">
+						<div class="ch-item ch-img-2">
+							<div class="ch-info-wrap">
+								<div class="ch-info">
+									<div class="ch-info-front ch-img-1"><i class="fa fa-bar-chart" aria-hidden="true"></i></div>
+									<div class="ch-info-back">
+										<h3><a class="scroll" href="#wthreeskills">SKILLS</a></h3>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-2 nav-grid nav-grid3">
+						<div class="ch-item ch-img-3">
+							<div class="ch-info-wrap">
+								<div class="ch-info">
+									<div class="ch-info-front ch-img-1"><i class="fa fa-file-text-o" aria-hidden="true"></i></div>
+									<div class="ch-info-back">
+										<h3><a class="scroll" href="#aitsresumewthree">RESUME</a></h3>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-2 nav-grid nav-grid4">
+						<div class="ch-item ch-img-4">
+							<div class="ch-info-wrap">
+								<div class="ch-info">
+									<div class="ch-info-front ch-img-1"><i class="fa fa-briefcase" aria-hidden="true"></i></div>
+									<div class="ch-info-back">
+										<h3><a class="scroll" href="#portfolio">WORK</a></h3>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-2 nav-grid nav-grid5">
+						<div class="ch-item ch-img-5">
+							<div class="ch-info-wrap">
+								<div class="ch-info">
+									<div class="ch-info-front ch-img-1"><i class="fa fa-floppy-o" aria-hidden="true"></i></div>
+									<div class="ch-info-back">
+										<h3><a  href="http://priteshbhavsar.com/Pritesh_Bhavsar_12_8_2017.pdf">SAVE</a></h3>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-2 nav-grid nav-grid6">
+						<div class="ch-item ch-img-6">
+							<div class="ch-info-wrap">
+								<div class="ch-info">
+									<div class="ch-info-front ch-img-1"><i class="fa fa-phone" aria-hidden="true"></i></div>
+									<div class="ch-info-back">
+										<h3><a class="scroll cont" href="#contact">CONTACT</a></h3>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="agileabout" id="agileabout">
+		<div class="container-fluid">
+			<h2>ABOUT ME</h2>
+			<div class="agileabout-grids">
+				<div class="col-md-4 agileabout-grid agileabout-grid-1">
+					<h3>MY STORY</h3>
+					<p align="justify">Hello, I’m a 23 years old Chief Visionary Officer, Chief Strategy Officer at Xamut Technologies and a Master’s Degree Student in Computer Science based in Bridgeport, CT, USA. <br>
+I’m focusing my career in the field of Artificial Intelligence and its various aspect. The Idea of being part of this revolutionary technology paradigm for mankind drives me more in its study and exploration.<br>
+Horizon of Innovation and Transformation is at its constant shift and to align with it, I along with my friends co-founded a Tech. Startup Xamut Technology located in India. As my role of Visionary and Strategy Officer, I’m at constant motivation of doing, achieving and creating something new.<br> This is where I define my base line <i>“Think Beyond Infinity”</i>.
+</p>
+				</div>
+				<div class="col-md-4 agileabout-grid agileabout-grid-2">
+					<div >
+						<img src="images/about.png" alt="Opulent">
+					</div>
+				</div>
+				<div class="col-md-4 agileabout-grid agileabout-grid-3">
+					<h3>CONTACT</h3>
+					<br>
+					<ul>
+						<li><div class="li1">Birthday</div><div class="li2">:</div><div class="li3">Nov/04/1993</div><div class="clearfix"></div></li>
+						<li><div class="li1">Phone</div><div class="li2">:</div><div class="li3"> <a class="mobilesOnly" href="tel:+14759883623">+1 203 502 3161</div><div class="clearfix"></div></li>
+						<li><div class="li1">Email</div><div class="li2">:</div><div class="li3"><a class="mail" href="mailto:mail@example.com">bpritesh1@hotmail.com</a></div><div class="clearfix"></div></li>
+						<li><div class="li1">Website</div><div class="li2">:</div><div class="li3"><a href="http://www.priteshbhavsar.com" target="_blank">priteshbhavsar.com</a></div><div class="clearfix"></div></li>
+						<li><div class="li1">LinkedIn</div><div class="li2">:</div><div class="li3"><a href="https://www.linkedin.com/in/priteshbhavsar/" target="_blank">linkedin.com/in/priteshbhavsar/</a></div><div class="clearfix"></div></li>
+						<li><div class="li1">Address</div><div class="li2">:</div><div class="li3"><a href="https://www.google.com/maps/place/University+of+Bridgeport/@41.1646751,-73.1923421,17z/data=!3m1!4b1!4m5!3m4!1s0x89e80e0e8cba1c71:0x9c3bc31028d06477!8m2!3d41.1646751!4d-73.1901534" target="_blank">Bridgeport, CT, USA</a></div><div class="clearfix"></div></li>
+					</ul>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+
+		</div>
+	</div>
+	
+	<div class="wthreeskills" id="wthreeskills">
+		<div class="container-fluid">
+			<h3>MY SKILLS</h3>
+
+			<div class="wthreeskills-grids">
+
+				<div class="col-md-6 wthreeskills-grid wthreeskills-grid-1">
+					<h4>PROFESSIONAL SKILLS</h4>
+
+					<div class="tabs">
+						<div class="sap_tabs">
+							<div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">
+								<ul class="resp-tabs-list">
+									<li class="resp-tab-item" aria-controls="tab_item-1" role="tab"><span>Team Skills</span></li>
+									<li class="resp-tab-item" aria-controls="tab_item-2" role="tab"><span>Entrepreneur Skills</span></li>									
+								</ul>
+
+								<div class="resp-tabs-container">
+									<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-1">
+										<p>A key to swift exchange of ideas among people working with is only via good professional skill. I hold a good command over communication, planning, organizing, decision making, problem solving and leading. For most of my projects I was designated as Team Leader and for my past club’s involvement, for most of them I was awarded with the designation of Technical Head.</p>
+										<div class="w3lsstatsaits-info">
+											<div class="col-md-4 w3lsstatsaits-grid w3lsstatsaits-grid-1">
+												<div class="w3lsstatsaitsstats counter" data-slno='1' data-min='0' data-max='10' data-delay='.5' data-increment="5">9</div>
+												<p>Decision Making</p>
+											</div>
+											<div class="col-md-4 w3lsstatsaits-grid w3lsstatsaits-grid-2">
+												<div class="w3lsstatsaitsstats counter" data-slno='1' data-min='0' data-max='10' data-delay='.5' data-increment="5">7</div>
+												<p>Leading</p>
+											</div>
+											<div class="col-md-4 w3lsstatsaits-grid w3lsstatsaits-grid-3">
+												<div class="w3lsstatsaitsstats counter" data-slno='1' data-min='0' data-max='10' data-delay='.5' data-increment="5">8</div>
+												<p>Communication</p>
+											</div>
+
+											<div class="clearfix"></div>
+										</div>
+									</div>
+									<div class="tab-2 resp-tab-content" aria-labelledby="tab_item-2">
+										<p>Entrepreneurship demands a great deal of skill, it is a toughest ship to sail. As C.V.O. and C.S.O. of xamut technologies, I unwind and upscale many of my professional skills. I possess Risk Tolerance, Vision Mapping, Negotiation, Recognizing Opportunities etc. as a part of my skill set.</p>
+										<div class="w3lsstatsaits-info">
+											<div class="col-md-4 w3lsstatsaits-grid w3lsstatsaits-grid-1">
+												<div class="w3lsstatsaitsstats counter" data-slno='1' data-min='0' data-max='10' data-delay='.5' data-increment="5">9</div>
+												<p>Vision Mapping</p>
+											</div>
+											<div class="col-md-4 w3lsstatsaits-grid w3lsstatsaits-grid-2">
+												<div class="w3lsstatsaitsstats counter" data-slno='1' data-min='0' data-max='10' data-delay='.5' data-increment="5">8</div>
+												<p>Negotiation</p>
+											</div>
+											<div class="col-md-4 w3lsstatsaits-grid w3lsstatsaits-grid-3">
+												<div class="w3lsstatsaitsstats counter" data-slno='1' data-min='0' data-max='10' data-delay='.5' data-increment="5">8</div>
+												<p>Risk Tolerance</p>
+											</div>
+											<div class="clearfix"></div>
+										</div>
+									</div>									
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="col-md-6 wthreeskills-grid wthreeskills-grid-2">
+					<h4>TECHNICAL SKILLS</h4>
+
+					<div class="bar_group">
+						<div class='bar_group__bar thin' label='Logic Designing' show_values='true' tooltip='true' value='92'></div>
+						<div class='bar_group__bar thin' label='Web Development' show_values='true' tooltip='true' value='85'></div>
+						<div class='bar_group__bar thin' label='Mobile App Development' show_values='true' tooltip='true' value='79'></div>
+						<div class='bar_group__bar thin' label='Database Management' show_values='true' tooltip='true' value='75'></div>
+						<div class='bar_group__bar thin' label='Designing' show_values='true' tooltip='true' value='78'></div>
+					</div>
+
+				</div>
+				<div class="clearfix"></div>
+
+			</div>
+
+		</div>
+	</div>
+
+	<div class="aitsresumewthree" id="aitsresumewthree">
+		<div class="container">
+			<div class="aitsresumewthree-tag">
+				<h3 class="title">MY RESUME</h3>
+			</div>
+			<div class="load_more">
+				<ul id="myList">
+					<li class="aitsaitsresumewthreeli-1">
+						<div class="l_g">
+							<div class="l_g_r g_r">
+								<div class="work">
+									<h4 class="title">EXPERIENCE</h4>
+									<div class="work-info"> 
+										<div class="col-md-6 work-grid work-left"> 
+											<h4>2016- Cont.</h4>
+										</div>
+										<div class="col-md-6 work-grid work-right"> 
+											<h5>Xamut Technologies Pvt. Ltd.</h5>
+											<p>At Xamut Technologies I hold a position of Chief Visionary Officer and Chief Strategy Officer, along with this I am also responsible for development and designing of product.</p>
+										</div>
+										<div class="clearfix"> </div>
+									</div>
+									<div class="work-info"> 
+										<div class="col-md-6 work-grid work-right work-right2"> 
+											<h4>2015-2016</h4>
+										</div>
+										<div class="col-md-6 work-grid work-left work-left2"> 
+											<h5>Freelancer</h5>
+											<p>The best I can describe about this profession is All In One. During this span, I worked as Technical Evangelist, Trainer, Developer, Designer, Analysist etc. This is what I loved about it as I’ve experienced variety of responsibilities.</p>
+										</div>
+										<div class="clearfix"> </div>
+									</div>									
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="l_g">
+							<div class="l_g_r g_r">
+								<div class="work">
+									<h4 class="title title2">EDUCATION</h4>
+									<div class="work-info"> 
+										<div class="col-md-6 work-grid work-left"> 
+											<h4>2016</h4>
+										</div>
+										<div class="col-md-6 work-grid work-right"> 
+											<h5 class="univ">University of Bridgeport, CT, USA</h5>
+											<p>With the vision of learning more in the field of Artificial Intelligence, I started with my Master’s program in Computer Science. I am currently pursuing education here.</p>
+										</div>
+										<div class="clearfix"> </div>
+									</div>
+									<div class="work-info"> 
+										<div class="col-md-6 work-grid work-right work-right2"> 
+											<h4>2012-2015</h4>
+										</div>
+										<div class="col-md-6 work-grid work-left work-left2"> 
+											<h5>University of Pune, MH, India</h5>
+											<p>I’ve completed my Bachelors education in Information Technology. This is where I gained the knowledge of maximum technologies on which I have decided to build up my career.</p>
+										</div>
+										<div class="clearfix"> </div>
+									</div>
+									<div class="work-info"> 
+										<div class="col-md-6 work-grid work-left"> 
+											<h4>2009-2012</h4>
+										</div>
+										<div class="col-md-6 work-grid work-right"> 
+											<h5 class="sch">University of Mumbai (MSBTE)</h5>
+											<p>Diploma in Computer Engineering is the place where I learnt all the fundamentals of my programming and coding career.</p>
+										</div>
+										<div class="clearfix"> </div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<div class="wow fadeInUp" id="loadMore">Show More <i class="fa fa-chevron-down" aria-hidden="true"></i></div>
+				<div class="wow fadeInDown" id="showLess">Show Less <i class="fa fa-chevron-up" aria-hidden="true"></i></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="portfolio w3layouts agileits" id="portfolio">
+		<div class="container">
+
+			<h3>MY WORK</h3>
+
+			<ul class="simplefilter w3layouts agileits">
+				<li class="active w3layouts agileits" data-filter="all">All</li>
+				<li data-filter="1">Software & Apps</li>
+				<li data-filter="2">Research Projects</li>
+			</ul>
+
+			<div class="filtr-container w3layouts agileits">
+
+				<div class="filtr-item w3layouts agileits portfolio-t" data-category="1" data-sort="Busy streets">
+					<a href="images/portfolio-1.png" class="b-link-stripe w3layouts agileits b-animate-go thickbox">
+						<figure>
+							<img src="images/portfolio-1.png" class="img-responsive w3layouts agileits" alt="Affiliation">
+							<figcaption>
+								<h3>Healing Touch</h3>
+							</figcaption>
+						</figure>
+					</a>
+				</div>
+
+				<div class="filtr-item w3layouts agileits" data-category="1" data-sort="Luminous night">
+					<a href="images/portfolio-2.png" class="b-link-stripe w3layouts agileits b-animate-go thickbox">
+						<figure>
+							<img src="images/portfolio-2.png" class="img-responsive w3layouts agileits" alt="Affiliation">
+							<figcaption>
+								<h3>Kid-Nee</h3>
+							</figcaption>
+						</figure>
+					</a>
+				</div>
+
+				<div class="filtr-item w3layouts agileits" data-category="1" data-sort="City wonders">
+					<a href="images/portfolio-3.png" class="b-link-stripe w3layouts agileits b-animate-go thickbox">
+						<figure>
+							<img src="images/portfolio-3.png" class="img-responsive w3layouts agileits" alt="Affiliation">
+							<figcaption>
+								<h3>RL Dental Lab Software</h3>
+							</figcaption>
+						</figure>
+					</a>
+				</div>
+
+				<div class="filtr-item w3layouts agileits" data-category="2" data-sort="In production">
+					<a href="images/portfolio-4.png" class="b-link-stripe w3layouts agileits b-animate-go thickbox">
+						<figure>
+							<img src="images/portfolio-4.png" class="img-responsive w3layouts agileits" alt="Affiliation">
+							<figcaption>
+								<h3>Lab of Things</h3>
+							</figcaption>
+						</figure>
+					</a>
+				</div>
+
+				<div class="filtr-item w3layouts agileits" data-category="1" data-sort="Industrial site">
+					<a href="images/portfolio-5.png" class="b-link-stripe w3layouts agileits b-animate-go thickbox">
+						<figure>
+							<img src="images/portfolio-5.png" class="img-responsive w3layouts agileits" alt="Affiliation">
+							<figcaption>
+								<h3>LBSDS</h3>
+							</figcaption>
+						</figure>
+					</a>
+				</div>
+
+				<div class="filtr-item w3layouts agileits" data-category="2" data-sort="Peaceful lake">
+					<a href="images/portfolio-6.png" class="b-link-stripe w3layouts agileits b-animate-go thickbox">
+						<figure>
+							<img src="images/portfolio-6.png" class="img-responsive w3layouts agileits" alt="Affiliation">
+							<figcaption>
+								<h3>Neurosky</h3>
+							</figcaption>
+						</figure>
+					</a>
+				</div>
+				
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="contact" id="contact">
+		<div class="container">
+			<h3>CONTACT ME</h3>
+			<div class="heading-underline"></div>
+			<form onsubmit="submitForm(); return false;" action="contact.php" method="post" class="contact_form slideanim">
+
+				<div class="message">
+					<div class="col-md-6 col-sm-6 grid_6 c1">
+						<input id="n" type="text" class="margin-right" Name="name" placeholder="Name" required="">
+						<input id="e" type="email" Name="email" placeholder="Email" required="">
+						<input id="ph" type="text" class="margin-right" Name="phone_number" placeholder="Phone Number" required="">
+					</div>
+					<div class="col-md-6 col-sm-6 grid_6 c1">
+						<textarea id="m" name="message" placeholder="Message" required=""></textarea>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<input id="mybtn" type="submit" class="more_btn" value="Send Message"> <span id="status"> </status>
+			</form>
+		</div>
+	</div>
+
+	<div class="footer">
+		<div class="container">
+			<div class="copyright slideanim">
+				<p>&copy; 2016. All Rights Reserved | Developed by <a href="http://www.xamut.com/"> Pritesh C. Bhavsar </a></p>
+			</div>
+		</div>
+	</div>
+	
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+			<script src="js/easyResponsiveTabs.js" type="text/javascript"></script>
+			<script type="text/javascript">
+				$(document).ready(function () {
+					$('#horizontalTab').easyResponsiveTabs({
+						type: 'default',
+						width: 'auto',
+						fit: true,
+					});
+				});
+			</script>
+
+			<script src="js/waypoints.min.js"></script> 
+			<script src="js/counterup.min.js"></script> 
+			<script>
+				jQuery(document).ready(function( $ ) {
+					$('.counter').counterUp({
+						delay: 10,
+						time: 1000,
+					});
+				});
+			</script>
+
+		<script src="js/bars.js"></script>
+
+			<script>
+				$(document).ready(function () {
+					size_li = $("#myList li").size();
+					x=1;
+					$('#myList li:lt('+x+')').show();
+					$('#loadMore').click(function () {
+						x= (x+1 <= size_li) ? x+1 : size_li;
+						$('#myList li:lt('+x+')').show();
+					});
+					$('#showLess').click(function () {
+						x=(x-1<0) ? 1 : x-1;
+						$('#myList li').not(':lt('+x+')').hide();
+					});
+				});
+			</script>
+
+			<script src="js/jquery.filterizr.js"></script>
+			<script src="js/controls.js"></script>
+			<script type="text/javascript">
+				$(function() {
+					$('.filtr-container').filterizr();
+				});
+			</script>
+
+			<script src="js/jquery.chocolat.js"></script>
+			<script type="text/javascript">
+				$(function() {
+					$('.filtr-item a').Chocolat();
+				});
+			</script>
+
+			<script src="js/owl.carousel.js"></script>
+			<script>
+				$(document).ready(function() {
+					$("#owl-demo").owlCarousel ({
+						items : 8,
+						lazyLoad : true,
+						autoPlay : true,
+						speed: 900,
+						pagination : false,
+					});
+				});
+			</script>
+
+			<script type="text/javascript">
+				$(document).ready(function() {
+					var defaults = {
+						containerID: 'toTop',
+						containerHoverID: 'toTopHover',
+						scrollSpeed: 100,
+						easingType: 'linear',
+					};
+					$().UItoTop({ easingType: 'easeOutQuart' });
+				});
+			</script>
+			<a href="#" id="toTop" class="stuoyal3w stieliga" style="display: block;"> <span id="toTopHover" style="opacity: 0;"> </span></a>
+
+			<script type="text/javascript" src="js/move-top.js"></script>
+			<script type="text/javascript" src="js/easing.js"></script>
+			<script type="text/javascript">
+				jQuery(document).ready(function($) {
+					$(".scroll").click(function(event){
+						event.preventDefault();
+						$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+					});
+				});
+			</script>
+
+<script src='http://cdnjs.cloudflare.com/ajax/libs/zepto/1.0/zepto.min.js'></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/stats.js/r11/Stats.js'></script>
+  <script src="js/index.js"></script>
 </body>
 </html>
