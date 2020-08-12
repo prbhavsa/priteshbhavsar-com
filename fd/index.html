@@ -37,19 +37,19 @@
     <video id="video" playsinline style="
       -webkit-transform: scaleX(-1);
       transform: scaleX(-1);
-      width: 300px;
-      height: 300px;
+      width: auto;
+      height: auto;
       ">
     </video>
     <canvas id="output"></canvas>
 
     <br>
     <table>
-        <th>
-            <td>Parameter</td>
-            <td>X-axis</td>
-            <td>Y-axis</td>
-        </th>
+        <tr>
+            <th>Parameter</th>
+            <th>X-axis</th>
+            <th>Y-axis</th>
+        </tr>
         <tr>
             <td>Right Eye</td>
             <td id="ri-x"></td>
@@ -81,17 +81,29 @@
             <td id="le-y"></td>
         </tr>
         <tr>
-            <td>Eyes Distance</td>
-            <td id="iDistance"></td>
-        </tr>
-        <tr>
             <td>Eyes Distance in %</td>
             <td id="iDistancePer"></td>
         </tr>
+        <tr>
+            <td>Face Distance in %</td>
+            <td id="fDistancePer"></td>
+        </tr>
     </table>
-    <br><br>
+    <br>
     <hr>
-    <h2 id="status"></h2>
+    <table>
+        <tr>
+            <th><h1>Vision Status</h1></th>
+            <th><h1>Listening Status</h1></th>
+            <th><h1>Text</h1></th>
+        </tr>
+        <tr>
+            <td><h1 id="vStatus"></h1></td>
+            <td><h1 id="lStatus"></h1></td>
+            <td><h3 id="sText"></h3></td>
+        </tr>
+    </table>
+
 
     <!--<video id="video" playsinline style="-->
       <!-- -webkit-transform: scaleX(-1);-->

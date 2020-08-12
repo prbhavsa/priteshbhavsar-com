@@ -41,6 +41,8 @@ const renderPrediction = async () => {
             const start = predictions[i].topLeft;
             const end = predictions[i].bottomRight;
             const size = [end[0] - start[0], end[1] - start[1]];
+            let fDistancePer = ((start[0]-end[0])/300)*100;
+            document.getElementById('fDistancePer').innerHTML = fDistancePer;
             ctx.fillStyle = "rgba(255, 0, 0, 0.5)";
             ctx.fillRect(start[0], start[1], size[0], size[1]);
 
@@ -54,15 +56,19 @@ const renderPrediction = async () => {
                     const y = landmarks[j][1];
                     ctx.fillRect(x, y, 5, 5);
                     let eyeDistance = landmarks[0][0] - landmarks[1][0];
-                    document.getElementById('iDistance').innerHTML = eyeDistance;
+
                     let eyeDistancePer = (eyeDistance/150)*100;
-                    if(eyeDistancePer <= 42){
-                        document.getElementById('status').style.color = 'red';
-                        document.getElementById('status').innerHTML = 'Not Looking';
+                    if(eyeDistancePer <= 42 || fDistancePer <= 50){
+                        document.getElementById('vStatus').style.color = 'red';
+                        document.getElementById('vStatus').innerHTML = 'Not Looking';
+                        document.getElementById('lStatus').style.color = 'red';
+                        document.getElementById('lStatus').innerHTML = 'Not Listening';
                     }
                     else{
-                        document.getElementById('status').style.color = 'green';
-                        document.getElementById('status').innerHTML = 'Looking';
+                        document.getElementById('vStatus').style.color = 'green';
+                        document.getElementById('vStatus').innerHTML = 'Looking';
+                        document.getElementById('lStatus').style.color = 'green';
+                        document.getElementById('lStatus').innerHTML = 'Listening';
                     }
 
                     document.getElementById('iDistancePer').innerHTML = eyeDistancePer;
