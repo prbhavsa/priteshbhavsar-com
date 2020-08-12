@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        body {
+            margin: 25px;
+        }
+
+        #main {
+            position: relative;
+            margin: 50px 0;
+        }
+
+        canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        #description {
+            margin-top: 20px;
+            width: 600px;
+        }
+
+        #description-title {
+            font-weight: bold;
+            font-size: 18px;
+        }
+    </style>
+
+</head>
+<body>
+<div id="main">
+    <video id="video" playsinline style="
+      -webkit-transform: scaleX(-1);
+      transform: scaleX(-1);
+      width: 300px;
+      height: 300px;
+      ">
+    </video>
+    <canvas id="output"></canvas>
+
+    <br>
+    <table>
+        <th>
+            <td>Parameter</td>
+            <td>X-axis</td>
+            <td>Y-axis</td>
+        </th>
+        <tr>
+            <td>Right Eye</td>
+            <td id="ri-x"></td>
+            <td id="ri-y"></td>
+        </tr>
+        <tr>
+            <td>Left Eye</td>
+            <td id="li-x"></td>
+            <td id="li-y"></td>
+        </tr>
+        <tr>
+            <td>Nose</td>
+            <td id="n-x"></td>
+            <td id="n-y"></td>
+        </tr>
+        <tr>
+            <td>Mouth</td>
+            <td id="m-x"></td>
+            <td id="m-y"></td>
+        </tr>
+        <tr>
+            <td>Right Ear</td>
+            <td id="re-x"></td>
+            <td id="re-y"></td>
+        </tr>
+        <tr>
+            <td>Left Eye</td>
+            <td id="le-x"></td>
+            <td id="le-y"></td>
+        </tr>
+        <tr>
+            <td>Eyes Distance</td>
+            <td id="iDistance"></td>
+        </tr>
+        <tr>
+            <td>Eyes Distance in %</td>
+            <td id="iDistancePer"></td>
+        </tr>
+    </table>
+    <br><br>
+    <hr>
+    <h2 id="status"></h2>
+
+    <!--<video id="video" playsinline style="-->
+      <!-- -webkit-transform: scaleX(-1);-->
+      <!--transform: scaleX(-1);-->
+      <!--visibility: hidden;-->
+      <!--width: auto;-->
+      <!--height: auto;-->
+      <!--">-->
+    <!--</video>-->
+</div>
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/blazeface"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
