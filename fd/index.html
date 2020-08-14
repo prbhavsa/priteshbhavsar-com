@@ -33,90 +33,105 @@
 
 </head>
 <body>
-<div id="main">
-    <video id="video" playsinline style="
+<div style="width: 100%; display: flex">
+    <div id="main" style="flex: 1" >
+        <video id="video" playsinline style="
       -webkit-transform: scaleX(-1);
       transform: scaleX(-1);
       width: auto;
       height: auto;
       ">
-    </video>
-    <canvas id="output"></canvas>
-
-    <br>
-    <table>
-        <tr>
-            <th>Parameter</th>
-            <th>X-axis</th>
-            <th>Y-axis</th>
-        </tr>
-        <tr>
-            <td>Right Eye</td>
-            <td id="ri-x"></td>
-            <td id="ri-y"></td>
-        </tr>
-        <tr>
-            <td>Left Eye</td>
-            <td id="li-x"></td>
-            <td id="li-y"></td>
-        </tr>
-        <tr>
-            <td>Nose</td>
-            <td id="n-x"></td>
-            <td id="n-y"></td>
-        </tr>
-        <tr>
-            <td>Mouth</td>
-            <td id="m-x"></td>
-            <td id="m-y"></td>
-        </tr>
-        <tr>
-            <td>Right Ear</td>
-            <td id="re-x"></td>
-            <td id="re-y"></td>
-        </tr>
-        <tr>
-            <td>Left Eye</td>
-            <td id="le-x"></td>
-            <td id="le-y"></td>
-        </tr>
-        <tr>
-            <td>Eyes Distance in %</td>
-            <td id="iDistancePer"></td>
-        </tr>
-        <tr>
-            <td>Face Distance in %</td>
-            <td id="fDistancePer"></td>
-        </tr>
-    </table>
-    <br>
-    <hr>
-    <table>
-        <tr>
-            <th><h1>Vision Status</h1></th>
-            <th><h1>Listening Status</h1></th>
-            <th><h1>Text</h1></th>
-        </tr>
-        <tr>
-            <td><h1 id="vStatus"></h1></td>
-            <td><h1 id="lStatus"></h1></td>
-            <td><h3 id="sText"></h3></td>
-        </tr>
-    </table>
+        </video>
+        <!--<canvas id="output"></canvas>-->
 
 
-    <!--<video id="video" playsinline style="-->
-      <!-- -webkit-transform: scaleX(-1);-->
-      <!--transform: scaleX(-1);-->
-      <!--visibility: hidden;-->
-      <!--width: auto;-->
-      <!--height: auto;-->
-      <!--">-->
-    <!--</video>-->
+
+        <!--<video id="video" playsinline style="-->
+        <!-- -webkit-transform: scaleX(-1);-->
+        <!--transform: scaleX(-1);-->
+        <!--visibility: hidden;-->
+        <!--width: auto;-->
+        <!--height: auto;-->
+        <!--">-->
+        <!--</video>-->
+    </div>
+
+    <div style="flex: 1">
+
+        <table>
+            <tr>
+                <th>Parameter</th>
+                <th>X-axis</th>
+                <th>Y-axis</th>
+            </tr>
+            <tr>
+                <td>Right Eye</td>
+                <td id="ri-x"></td>
+                <td id="ri-y"></td>
+            </tr>
+            <tr>
+                <td>Left Eye</td>
+                <td id="li-x"></td>
+                <td id="li-y"></td>
+            </tr>
+            <tr>
+                <td>Nose</td>
+                <td id="n-x"></td>
+                <td id="n-y"></td>
+            </tr>
+            <tr>
+                <td>Mouth</td>
+                <td id="m-x"></td>
+                <td id="m-y"></td>
+            </tr>
+            <tr>
+                <td>Right Ear</td>
+                <td id="re-x"></td>
+                <td id="re-y"></td>
+            </tr>
+            <tr>
+                <td>Left Eye</td>
+                <td id="le-x"></td>
+                <td id="le-y"></td>
+            </tr>
+            <tr>
+                <td>Eyes Distance in %</td>
+                <td id="iDistancePer"></td>
+            </tr>
+            <tr>
+                <td>Face Distance in %</td>
+                <td id="fDistancePer"></td>
+            </tr>
+            <tr>
+                <td>Angle</td>
+                <td id="angle"></td>
+            </tr>
+        </table>
+        <br>
+        <hr>
+        <table>
+            <tr>
+                <th><h1>Vision Status</h1></th>
+                <th><h1>Listening Status</h1></th>
+            </tr>
+            <tr>
+                <td><h1 id="vStatus"></h1></td>
+                <td><h1 id="lStatus"></h1></td>
+            </tr>
+        </table>
+        <h1>Text:</h1>
+        <p id="sText"></p>
+
+
+    </div>
+
 </div>
+
 <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
 <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/blazeface"></script>
 <script src="app.js"></script>
+<script type="text/javascript" src="//vhss-d.oddcast.com/vhost_embed_functions_v2.php?acc=7295865&js=1"></script>
+<script type="text/javascript">AC_VHost_Embed(7295865,300,400,'',1,0, 2678551, 0,1,0,'395b0e4ed663e05f7fcd422ea6e46cc5',0);</script>
 
 </body>
 </html>
