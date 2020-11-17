@@ -156,6 +156,8 @@ const setupPage = async () => {
     videoHeight = video.videoHeight;
     video.width = videoWidth;
     video.height = videoHeight;
+    document.getElementById('res').innerHTML = videoWidth + ' x '+ videoHeight;
+
 
     // canvas = document.getElementById('output');
     // canvas.width = videoWidth;
