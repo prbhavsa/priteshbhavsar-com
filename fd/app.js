@@ -67,7 +67,7 @@ const renderPrediction = async () => {
                     let eyeDistance = landmarks[0][0] - landmarks[1][0];
 
                     let eyeDistancePer = (eyeDistance/150)*100;
-                    if(eyeDistancePer <= 42 || fDistancePer <= 50){
+                    if(eyeDistancePer <= 32 || fDistancePer <= 30){
                         document.getElementById('vStatus').style.color = 'red';
                         document.getElementById('vStatus').innerHTML = 'Not Looking';
                         document.getElementById('lStatus').style.color = 'red';
